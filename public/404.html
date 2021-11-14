@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+
+<html lang="en" >
+<head>
+    <title>Loading...</title>
+</head>
+    
+<body id="body" style="background-color: #070808;">
+    
+    <!--
+    <div id="Primary" style="
+         position: relative;
+         padding-top: 35px;
+
+         font-size: 35px;
+         font-family: sans-serif;
+         font-weight: 900;
+         color: #ffffff;
+         text-align: center;
+         line-height: 35px
+    ">Prepare to get redirected!</div>
+    
+    <div id="Primary" style="
+         position: relative;
+         padding-top: 20px;
+
+         font-size: 20px;
+         font-family: sans-serif;
+         font-weight: 900;
+         color: #cccccc;
+         text-align: center;
+         line-height: 20px
+    ">Sending you to the proper page...</div>
+    -->
+    <div id="LoadingRedirectBack" style="position: absolute; display: flex; width: 1100px; min-width: 772px; max-width: 100%; top: 0px; margin: 0px; padding: 0px"></div>
+
+    <script>
+        window.location.href = "./index.html";
+        /*
+        if(window.location.protocol != 'file:') {
+            var Date = new Date();
+            Date.setTime(Date.getTime() + 60000);
+            var Expires = "expires=" + Date.toUTCString();
+            document.cookie =  "RedirectCookie=" + window.location.pathname + ";" + Expires + ";path=/";
+            
+            window.location.href = "./index.html";
+        }
+        */
+    </script>
+</body>
+</html>

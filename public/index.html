@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+
+	<title>Photop</title>
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Photop" />
+  <meta property="og:site_name" content="Photop" />
+	<meta property="og:url" content="https://photop.live/" />
+	<meta property="og:description" content="Browse posts made by users and chat your thoughts live with others." />
+	<meta property="og:image" content="https://photop.live/Images/ChillPhotopIcon.png" />
+
+	<meta name="description" content="Browse posts made by users and chat your thoughts live with others." />
+	<meta name="author" content="Exotek" />
+	<link rel="shortcut icon" href="./Images/ChillPhotopIcon.png" type="image/x-icon" />
+	<!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://apis.google.com, https://www.googletagmanager.com"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<meta name="theme-color" content="#7DCBFF" />
+
+	<link rel="icon" href="./Images/ChillPhotopIcon.png" />
+	<link rel="apple-touch-icon" href="./Images/ChillPhotopIcon.png" />
+
+  <link rel="manifest" href="./manifest.json" />
+
+	<meta http-equiv="Cache-control" content="public, max-age=1800" />
+  <meta http-equiv="Content-Type" content="text/html; charset= ISO-8859-1" />
+
+  <meta name="Access-Control-Allow-Origin" value="http://localhost, https://hcaptcha.com, https://*.hcaptcha.com, https://hcaptcha.com, https://*.hcaptcha.com, https://hcaptcha.com, https://*.hcaptcha.com, https://hcaptcha.com, https://*.hcaptcha.com" />
+
+  <link rel="stylesheet" href="Scrollbars.css" />
+
+  <!-- ARC WIDGET (MAY REMOVE IN FUTURE) -->
+  <!-- <script async src="https://arc.io/widget.min.js#WXhs6moP"></script> -->
+</head>
+<style>
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,600,700,800&display=swap');
+/* (Font End) */
+</style>
+<body id="body" style="background-color: #151617">
+  <noscript>
+      <div style="position: relative; padding-top: 35px; font-size: 35px; font-family: sans-serif; font-weight: 900; color: #ffffff; text-align: center">You find yourself in a strange place...</div>
+      <div style="position: relative; padding-top: 15px; font-size: 25px; font-family: sans-serif; font-weight: 900; color: #cccccc; text-align: center">Where is Photop you ask?</div>
+      <div style="position: relative; max-width: 800px; left: 50%; transform: translate(-50%, 0%); padding-top: 60px; font-size: 18px; font-family: sans-serif; font-weight: 900; color: #cccccc; text-align: center">Photop requires JavaScript to be enabled. Please enable JavaScript by going to site settings and activating it. If your browser doesn't support JavaScript we recommend switching to a browser that does. Such browsers include: Chrome, Safari, Firefox, Edge, Opera, and many more.</div>
+      <div style="position: relative; max-width: 800px; left: 50%; transform: translate(-50%, 0%); padding-top: 60px; font-size: 20px; font-family: sans-serif; font-weight: 900; color: #ffffff; text-align: center">Steps to enable JavaScript in many common browsers:</div>
+      <div style=" position: relative; max-width: 800px; left: 50%; transform: translate(-50%, 0%); padding-top: 20px; font-size: 20px; font-family: sans-serif; font-weight: 600; color: #dddddd; text-align: center"><strong style="font-size: 30px; color: #ffffff">1.</strong> Open browser settings.</div>
+      <div style=" position: relative; max-width: 800px; left: 50%; transform: translate(-50%, 0%); padding-top: 20px; font-size: 20px; font-family: sans-serif; font-weight: 600; color: #dddddd; text-align: center"><strong style="font-size: 30px; color: #ffffff">2.</strong> Go to the "Privicy and Safety" tab.</div>
+      <div style=" position: relative; max-width: 800px; left: 50%; transform: translate(-50%, 0%); padding-top: 20px; font-size: 20px; font-family: sans-serif; font-weight: 600; color: #dddddd; text-align: center"><strong style="font-size: 30px; color: #ffffff">3.</strong> Click "Site Settings" and select JavaScript.</div>
+      <div style=" position: relative; max-width: 800px; left: 50%; transform: translate(-50%, 0%); padding-top: 20px; font-size: 20px; font-family: sans-serif; font-weight: 600; color: #dddddd; text-align: center"><strong style="font-size: 30px; color: #ffffff">4.</strong> Enable JavaScript or unblock JavaScript.</div>
+      <div style=" position: relative; max-width: 800px; left: 50%; transform: translate(-50%, 0%); padding-top: 20px; font-size: 20px; font-family: sans-serif; font-weight: 600; color: #dddddd; text-align: center"><strong style="font-size: 30px; color: #ffffff">5.</strong> Refresh this page so your changes apply.</div>
+  </noscript>
+
+  <div id="Primary" style="position: absolute; display: flex; width: 940px; min-width: 650px; max-width: 100%; top: 0px; margin: 0px; padding: 0px; left: 50%; transform: translateX(-50%)"></div>
+  <!-- min-width: 772px; -->
+
+  <script>
+    var SiteVersion = 6.3;
+
+    var LoadScripts = {
+      Feed: "./Feed.js",
+      Profile: "./Profile.js",
+      BridgeConnect: "./BridgeConnect.js",
+      PostRender: "./PostRender.js",
+      ImageUpload: "./FirebaseMedia.js",
+      AdManager: "./AManager.js",
+      Settings: "./Settings.js",
+      EmojiPicker: "./EmojiPicker.js",
+      AboutPage: "./AboutPage.js",
+      Moderation: "./Moderation.js",
+      BannedMessage: "./BannedMessage.js",
+      TOS: "./TOS.js",
+      Privacy: "./Privacy.js",
+      Rules: "./Rules.js"
+    };
+  </script>
+
+  <script async>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/Service-Worker.js');
+      });
+    }
+  </script>
+  
+  <!-- <script src="https://photoptesting.web.app/MainFunctions.js"></script> -->
+  <script src="JSS.js"></script>
+  <script src="MainUi.js" async></script>
+</body>
+
+</html>

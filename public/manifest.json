@@ -1,0 +1,26 @@
+{
+    "name": "Photop",
+    "short_name": "Photop",
+    "start_url": "/?source=pwa",
+    "theme_color": "#5ab7fa",
+    "background_color": "#151617",
+    "description": "Browse posts made by users and chat your thoughts live with others.",
+    "orientation": "portrait",
+    "display": "standalone",
+    "categories": [
+        "social",
+        "hangout",
+        "chat",
+        "news"
+    ],
+    "icons": [
+        {
+            "src": "https://app.photop.live/Images/SquarePhotopIcon.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "screenshots": [],
+    "shortcuts": [],
+    "scope": "/"
+}
